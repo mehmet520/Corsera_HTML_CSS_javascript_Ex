@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+	<meta charset='utf-8'>
+	<title> </title>
+	<style>
+		/* Ränder Formatieren*/
+		table { border: 2px solid black; border-collapse:collapse }
+		tr {color : black; font-size: 15pt}
+	</style>
+
+
+</head>
+
+<body>
+	<h1 align=center> Bezahlung per Lastschrift </h1>
+
+	<h3> Bitte geben Sie Ihre Kontodaten zur Bezahlung per Lastschrift ein.</h3>
+
+	<form action='lastschrift.php' method="post">
+	<table border='0px' solid red> 
+		<tr><th colspan='2'> Bezahlung per Lastschrift </th></tr>
+		<tr> <td colspan='2'> Bitte geben Sie Ihre Kontodaten zur Bezahlung per Lastschrift ein.</td></tr>
+
+		<tr>
+			<td >Kontoinhaber:</td>
+			<td ><input type='text' name='Kontoinhaber'></td>
+		</tr>
+
+		<tr>
+			<td>Telefon: *</td>
+			<td width="450px"><input type='text' name='Telefon'></td>
+		</tr>
+
+		<tr>
+			<td>Kontonummer:</td>
+			<td><input type='text' name='Kontonummer'></td>
+		</tr>
+
+		<tr>
+			<td>BLZ:</td>
+			<td><input type='text' name='BLZ'></td>
+		</tr>
+	</table>
+
+<p>* Angabe optional</p><br>
+
+	<input type ='submit' value='Button: Kontodaten bestätigen'>
+	<input type='reset'  value='Daten zurücksetzen'>
+
+
+</form>
+
+</body>
+
+</html>

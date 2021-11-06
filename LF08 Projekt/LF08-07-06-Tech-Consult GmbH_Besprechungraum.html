@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+	<meta charset='utf-8'>
+	<title> </title>
+	<style>
+		table th, td {
+			border:5px ; border-collapse:collapse 
+		}
+		tr {color : black; font-size: 15pt}
+	</style>
+</head>
+
+<body>
+	<h1> Besprechungsraum </h1>
+	<form action='buchung.php' method='get'>
+
+		<fieldset>
+			<legend>Raumbuchung</legend>
+			<table style='height:100px'>
+				<tr>
+					<td> <label for='pnummer'> Personalnummer:</label> </td>
+					<td style='width:120px'> <input type='text' name='pnummer' size='5'> </td> 
+					<td> &nbsp </td> 
+					<td> &nbsp </td>
+				</tr>
+
+				<tr>
+					<td> <label for='braum'>Besprechungsraum:</label></td> 
+					<td style='width:150px'> 
+						<select name='braumNr'>
+							<option value='braumNr1'> Raum I 	</option>
+							<option value='braumNr2'> Raum II	</option>
+							<option value='braumNr3'> Raum III	</option>
+							<option value='braumNr4'> RaumIV		</option> 
+						</select> </td> 
+					<td> <label for='datum'>Datum:</label></td> 
+					<td> <input type='date' name='datum' min='2021-11-4'> </td> 
+				</tr> 
+
+				<tr>
+					<td> <label for="beginn">Beginn:</label> </td>
+					<td> <input type='time' name='beginn'> </td> 
+					<td> <label for='Ende'>Ende: </label> </td>
+					<td> <input type='time' name='Ende'> </td> 
+				</tr> 
+			</table>
+		</fieldset><br>
+
+		<fieldset>
+			<legend> Catering </legend>
+			<table style='height:100px'>
+				<tr>
+					<td> <label for='catering'>Catering:</label> </td> 
+					<td> <input type='radio' name='catering' value='Ja'> <label for='catering'> Ja </label> </td> 
+					<td> <input type='radio' name='catering' value='Nein'> <label for='catering'> Nein </label> </td> 
+					<td> </td> 
+				</tr>
+
+				<tr>
+					<td> <label for='Apersonen'>Anzahl Personen</label> </td>
+					<td> <input type='number' name='Apersonen' min='2' max='8'> </td> 
+				</tr>
+			</table>
+		</fieldset><br>
+	<input type='submit' value='Reserviere'>
+</form>
+
+</body>
+
+</html>

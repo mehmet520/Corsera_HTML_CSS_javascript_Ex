@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de"> 
+	<head>
+		<meta charset ="utf-8">
+		<title>  Formularelemente</title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<!-- Formularelemente  -->
+		<!-- <form action="eingabe.php" method = "get">   -->
+		<form action = "eingabe.php" method ="get" >
+		
+			<p>
+			<!-- einzeiliges Textfeld -->
+			<label> Name:  </label> <input type = "text" name = "Nachname" >  <br>
+			<label> Vorname: </label> <input type ="text" name = "Vorname">
+			</p>
+		
+			<p>
+			<!-- Passwort -->
+			<label> Passwort: </label> <input type = "password"  name = "Passwort"> 	
+			</p>
+		
+			<p>
+			<!-- Email-Adresse -->
+			<label> Email-Adresse: </label> <input type="email" name = "Adresse">
+			</p>
+		
+			<!-- Radio - Buttons -->
+			<p>
+			<label>Trefen Sie Ihre Auswahl</label>	<br>	
+			<input type='radio' name='auswahl1' value="HTML"> <label>HTML</label><br>
+
+			<input type="radio" name="auswahl1" value='CSS'> <label>CSS</label>/label><br>
+
+			<input type='radio' name='auswahl1' value="JavaScript"> <label>JavaScript</label>
+			</p> 
+
+			<!-- Checkbox mehrfache Auswahl -->
+			<p>
+				<label> Welchen Pizzabelag bevorzugen Sie? Wählen Sie alle aus, die Ihnen schmecken</label><br>
+
+				<label>Tomaten</label> <input type='checkbox' name='Belag' value='Tomate'><br>
+
+				<label>Champignons</label><input type='checkbox' name='Belag' value='Pilze'><br>
+
+				<label>Mozeralla</label><input type='checkbox' name='Belag' value='Mozeralla'><br>
+			<p/>
+
+			<!-- Auswahlliste, Listbox, ..... -->
+			<p>
+				<label>Treffen Sie Ihr Auswahl!</label><br>
+				<select name='Fahrzeuge'>
+					<option value="BMW">	<label> BMW-2</label>	</option><br>
+					<option value='Ford'> 	<label> Ford </label>	</option> <br>
+					<option value='Tesla'>	<label> Tesla </label>	</option> <br>
+				</select>
+			</p>
+
+			<p>
+			<!-- mehrzeiliges Textfeld -->
+			<textarea row = '30' cols = '40' name='Inhalt'> Haben Sie unsere AGB gelesen?	</textarea>
+			</p>
+
+		<!-- Aktionsbutton-->
+		<input type= "submit"   value = "Formular absenden"> 
+
+		<input type='reset' value='Eingabe zurucksetzen'>
+		
+		</form>
+	</body>
+
+</html>
